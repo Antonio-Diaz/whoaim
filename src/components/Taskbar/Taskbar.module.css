@@ -1,0 +1,136 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: #d4d0c8;
+  border-top: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 4px;
+  z-index: 9999;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.startBtn {
+  height: 24px;
+  background: #d4d0c8;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px 0 6px;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: default;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #000;
+}
+
+.startBtn:active,
+.startBtnActive {
+  border-color: #808080 #ffffff #ffffff #808080;
+  padding-top: 2px;
+}
+
+.startFlags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.flagTL { background: #f25022; }
+.flagTR { background: #7fba00; }
+.flagBL { background: #00a4ef; }
+.flagBR { background: #ffb900; }
+
+.startText {
+  color: #000;
+}
+
+.separator {
+  width: 2px;
+  height: 22px;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #ffffff;
+  flex-shrink: 0;
+  margin: 0 2px;
+}
+
+.windowBtns {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.windowBtn {
+  height: 24px;
+  min-width: 120px;
+  max-width: 180px;
+  background: #d4d0c8;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 6px;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  cursor: default;
+  overflow: hidden;
+  color: #000;
+}
+
+.windowBtn:active,
+.windowBtnActive {
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #bdb9b1;
+  padding-top: 1px;
+}
+
+.wBtnIcon {
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.wBtnText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  flex: 1;
+}
+
+.tray {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+
+.trayIcon {
+  font-size: 12px;
+}
+
+.clock {
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  color: #000;
+  white-space: nowrap;
+}

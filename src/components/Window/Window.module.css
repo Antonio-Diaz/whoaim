@@ -1,0 +1,116 @@
+.window {
+  background: #d4d0c8;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  min-width: 220px;
+  min-height: 120px;
+}
+
+.titlebar {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 4px 3px 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+  user-select: none;
+  flex-shrink: 0;
+  height: 22px;
+}
+
+.titleIcon {
+  font-size: 13px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.titleText {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.controlBtns {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.controlBtn {
+  width: 16px;
+  height: 14px;
+  background: #d4d0c8;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  cursor: default;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  line-height: 1;
+}
+
+.controlBtn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.btnMin {
+  font-size: 11px;
+  line-height: 1;
+  padding-bottom: 3px;
+}
+
+.btnMax {
+  font-size: 9px;
+  line-height: 1;
+}
+
+.btnClose {
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.closeBtn {
+  margin-left: 2px;
+}
+
+.content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.resizeHandle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  cursor: se-resize;
+  background:
+    linear-gradient(135deg,
+      transparent 0%, transparent 40%,
+      #808080 40%, #808080 45%,
+      transparent 45%, transparent 55%,
+      #808080 55%, #808080 60%,
+      transparent 60%, transparent 70%,
+      #808080 70%, #808080 75%,
+      transparent 75%
+    );
+  pointer-events: all;
+}

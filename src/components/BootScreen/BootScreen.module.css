@@ -1,0 +1,43 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  z-index: 1000;
+  /* Hard transition — no CSS fade, just instant switch */
+  transition: background 0s;
+}
+
+/* CRT flash: brutal white, no blur, no fade */
+.screenFlicker {
+  background: #ffffff;
+}
+
+/* Dead black — text invisible */
+.screenDark {
+  background: #000000;
+}
+
+.textArea {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.55;
+  /* Disable antialiasing — raw bitmap feel */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  white-space: pre-wrap;
+  /* No glow, no shadow, no animation — raw */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Kill the default Typed.js cursor — we show none */
+.textArea :global(.typed-cursor) {
+  display: none;
+}
